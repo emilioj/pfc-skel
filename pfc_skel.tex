@@ -1,0 +1,717 @@
+\documentclass{pfc}
+
+% Clean header and footer
+\pagestyle{empty}
+
+%------------------------------------------------------------
+% Páxina de título
+%------------------------------------------------------------
+
+\setlength{\droptitle}{-8em}
+
+\pretitle {
+  \begin{center}
+    \includegraphics[scale=0.17]{img/logo_udc}\\[0.5cm]
+}
+
+\posttitle {
+  \end{center}
+  \begin{flushright}
+    \textbf{Autor:} Nome Apelido1 Apelido2\\
+    \textbf{Director/a/es/as:} Nome1 Apelido1 Apelido2\\
+                               Nome1 Apelido1 Apelido2\\
+    \vspace{1.0cm}
+    \textit{A Coruña, \today}
+  \end{flushright}
+}
+
+\date{}
+\author{}
+
+% Traballo Fin de Mestrado
+% \title {
+%   \textmd{FACULTADE DE INFORMÁTICA}\\
+%   \vspace{2.2cm}
+%   \textmd{\Large TRABALLO FIN DE MESTRADO}\\
+%   \bigskip
+%   \textmd{\large MESTRADO UNIVERSITARIO EN ENXEÑERÍA INFORMÁTICA}\\
+%   \vspace{5.5cm} \textmd{\LARGE \textbf{Título do Traballo Fin de Mestrado}}\\
+%   \vspace{5.5cm} }
+
+% Traballo Fin de Grao
+\title {
+  \textmd{FACULTADE DE INFORMÁTICA}\\
+  \vspace{2.2cm}
+  \textmd{\Large TRABALLO FIN DE GRAO}\\
+  \bigskip
+  \textmd{\Large GRAO EN ENXEÑERÍA INFORMÁTICA}\\
+  \bigskip
+  \textmd{\large Mención en xxxxxx}\\
+  \vspace{5.0cm} \textmd{\LARGE \textbf{Título do Traballo Fin de Grao}}\\
+  \vspace{5.0cm} }
+
+%------------------------------------------------------------
+% Comeza o texto do documento
+%------------------------------------------------------------
+\begin{document}
+
+% Preciso con opción 'galician' en babel, para evitar problemas con hyperref:
+\pdfstringdefDisableCommands{%
+  \let\MakeUppercase\relax
+}
+
+\frontmatter
+
+% Título
+\maketitle
+
+% Dedicatoria ou cita molona
+\begin{flushright}
+  \vspace{3.0cm} \textit{If the users don't control the program, the
+    program controls the users.}\\Richard M. Stallman
+\end{flushright}
+
+\blankpage
+
+% \paragraph{\large Agradecementos:}
+
+% O típico: compañeiras, amigas e familia. Ah, e por suposto, débolle
+% unha aos meus amados directores ;-)
+
+% Algunhas veces tamén se pon aquí algún detalle de financiamento que
+% contribuiu á realización do traballo.
+
+% \blankpage
+
+\paragraph{\large Resumo:}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+ullamcorper sapien ac suscipit. Aenean a lorem ac sapien laoreet
+viverra. Donec quis convallis nisl. Ut ut efficitur neque, bibendum
+aliquam est. Pellentesque molestie velit sit amet sem vestibulum, ac
+ullamcorper arcu iaculis. Aenean feugiat enim libero, ac scelerisque
+sapien dignissim eu. Donec lacus orci, faucibus vehicula egestas
+egestas, dapibus a magna. Integer finibus purus ac facilisis
+gravida. Suspendisse at purus a nisi dapibus cursus nec vel ligula.
+
+Ut a elementum justo, a aliquam sapien. Nullam erat orci, vehicula at
+tempor a, rhoncus ut quam. In facilisis magna ac mauris imperdiet
+ornare. Proin dignissim sem sit amet sodales rhoncus. Ut ut mauris at
+nisl iaculis congue. Maecenas diam est, aliquam a finibus quis,
+sodales at lorem. Maecenas hendrerit lectus non interdum
+aliquam. Aenean et pretium purus, id rutrum tortor. Praesent volutpat
+non nunc id consectetur. Sed cursus non lacus imperdiet
+fringilla. Curabitur pulvinar ex et nisl commodo, sit amet egestas
+enim auctor. Morbi convallis ullamcorper ex, ut aliquam magna cursus
+non. In tempus nec quam quis viverra. Aliquam egestas odio metus, quis
+tempus dui posuere finibus.
+
+Phasellus vehicula lorem at est vestibulum, in tempor sapien
+pulvinar. Sed sodales a ex ac bibendum. Nulla vulputate sit amet enim
+ut vestibulum. Nullam tincidunt, leo nec vehicula pulvinar, sapien
+lorem elementum nisl, in iaculis enim nunc id felis. Duis sagittis
+metus varius erat commodo imperdiet. Nullam eu velit vitae nulla
+finibus faucibus mattis vel eros. Proin tincidunt, leo non tempor
+elementum, ante diam pulvinar metus, viverra pulvinar ipsum erat et
+felis. Nulla quis placerat neque. Sed eu auctor nisl. Donec at
+sollicitudin magna. Fusce id mollis turpis. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc
+pulvinar odio at lectus sagittis, rhoncus finibus turpis cursus. Cras
+elementum, nisl a facilisis hendrerit, ante arcu volutpat mi, in
+euismod tortor nisl et velit. Nulla maximus, arcu vel bibendum
+maximus, felis erat aliquam tellus, in cursus nisl velit id
+felis. Fusce porta magna eget nisl porttitor, a feugiat mauris mollis.
+
+\blankpage
+
+\paragraph{\large Lista de palabras chave:\\\\}
+
+Lorem ipsum, Phasellus vehicula, Nullam erat orci.
+
+\blankpage
+
+\paragraph{\large Ferramentas e tecnoloxías empregadas:\\}
+
+\begin{itemize}
+\item[•] \textbf{Hardware:}
+
+\begin{itemize}
+\item[-] \textbf{Desenvolvemento}: Portátil [...]
+\item[-] \textbf{Probas}: PC [...]
+\end{itemize}
+
+\item[•] \textbf{Software:}
+
+\begin{itemize}
+\item[-] S.O. desenvolvemento e probas: GNU/Linux [...]
+\item[-] Linguaxes: [...]
+\item[-] Librerías: [...]
+\item[-] Compilación: [...]
+\item[-] Outras ferramentas: Git, Doxygen, Gdb, Valgrind [...]
+\end{itemize}
+
+\end{itemize}
+
+\blankpage
+\pagestyle{plain}
+
+\tableofcontents % indice de contidos
+
+\listoffigures % indice de figuras
+
+\listoftables % indice de cadros
+
+\mainmatter
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+\renewcommand{\headrulewidth}{0.5pt}
+
+
+
+\chapter{INTRODUCIÓN}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+ullamcorper sapien ac suscipit. Aenean a lorem ac sapien laoreet
+viverra. Donec quis convallis nisl. Ut ut efficitur neque, bibendum
+aliquam est. Pellentesque molestie velit sit amet sem vestibulum, ac
+ullamcorper arcu iaculis. Aenean feugiat enim libero, ac scelerisque
+sapien dignissim eu. Donec lacus orci, faucibus vehicula egestas
+egestas, dapibus a magna. Integer finibus purus ac facilisis
+gravida. Suspendisse at purus~\cite{HenessyPatterson} a nisi dapibus
+cursus nec vel ligula.
+
+Phasellus vehicula lorem at est vestibulum, in tempor sapien
+pulvinar. Sed sodales a ex ac bibendum. Nulla vulputate sit amet enim
+ut vestibulum. Nullam tincidunt, leo nec vehicula pulvinar, sapien
+lorem elementum nisl, in iaculis enim nunc id felis. Duis sagittis
+metus varius erat commodo imperdiet. Nullam eu velit vitae nulla
+finibus faucibus mattis vel eros.
+
+
+\section{Contexto e antecedentes}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+ullamcorper sapien ac suscipit. Aenean a lorem ac sapien laoreet
+viverra. Donec quis convallis nisl. Ut ut efficitur neque, bibendum
+aliquam est. Pellentesque molestie velit sit amet sem vestibulum, ac
+ullamcorper arcu iaculis. Aenean feugiat enim libero, ac scelerisque
+sapien dignissim eu. Donec lacus orci, faucibus vehicula egestas
+egestas, dapibus a magna. Integer finibus purus ac facilisis
+gravida. Suspendisse at purus a nisi dapibus cursus nec vel ligula.
+
+Ut a elementum justo, a aliquam sapien. Nullam erat orci, vehicula at
+tempor a, rhoncus ut quam. In facilisis magna ac mauris imperdiet
+ornare. Proin dignissim sem sit amet sodales rhoncus. Ut ut mauris at
+nisl iaculis congue. Maecenas diam est, aliquam a finibus quis,
+sodales at lorem. Maecenas hendrerit lectus non interdum
+aliquam. Aenean et pretium purus, id rutrum tortor. Praesent volutpat
+non nunc id consectetur. Sed cursus non lacus imperdiet
+fringilla. Curabitur pulvinar ex et nisl commodo, sit amet egestas
+enim auctor. Morbi convallis ullamcorper ex, ut aliquam magna cursus
+non~\cite{MapReduce, gromacs3}. In tempus nec quam quis
+viverra. Aliquam egestas odio metus, quis tempus dui posuere finibus.
+
+Phasellus vehicula lorem at est vestibulum, in tempor sapien
+pulvinar. Sed sodales a ex ac bibendum. Nulla vulputate sit amet enim
+ut vestibulum. Nullam tincidunt, leo nec vehicula pulvinar, sapien
+lorem elementum nisl, in iaculis enim nunc id felis. Duis sagittis
+metus varius erat commodo imperdiet. Nullam eu velit vitae nulla
+finibus faucibus mattis vel eros. Proin tincidunt, leo non tempor
+elementum, ante diam pulvinar metus, viverra pulvinar ipsum erat et
+felis. Nulla quis placerat neque. Sed eu auctor nisl. Donec at
+sollicitudin magna. Fusce id mollis turpis. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc
+pulvinar odio at lectus sagittis, rhoncus finibus turpis cursus. Cras
+elementum, nisl a facilisis hendrerit, ante arcu volutpat mi, in
+euismod tortor nisl et velit. Nulla maximus, arcu vel bibendum
+maximus, felis erat aliquam tellus, in cursus nisl velit id
+felis. Fusce porta magna eget nisl porttitor, a feugiat mauris mollis.
+
+Maecenas vitae massa non ex venenatis convallis facilisis ut
+augue. Sed vel mattis libero. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Mauris augue ligula, volutpat eget sodales vel,
+consectetur sit amet magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Aliquam non
+lectus velit. Sed quis lorem cursus, sodales ipsum vitae, placerat
+lectus. Phasellus blandit sodales augue sed placerat. Nullam id
+bibendum nulla, eu scelerisque urna. Ut efficitur enim lorem, vel
+mattis nulla vehicula et. Vivamus nisl augue, laoreet iaculis risus
+in, varius interdum libero. Nulla ac pulvinar ipsum. Nulla a nulla
+ex. Cras quis aliquam diam, at porta eros.
+
+\section{Motivación e obxectivos}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+ullamcorper sapien ac suscipit. Aenean a lorem ac sapien laoreet
+viverra. Donec quis convallis nisl. Ut ut efficitur neque, bibendum
+aliquam est. Pellentesque molestie velit sit amet sem vestibulum, ac
+ullamcorper arcu iaculis. Aenean feugiat enim libero, ac scelerisque
+sapien dignissim eu. Donec lacus orci, faucibus vehicula egestas
+egestas, dapibus a magna. Integer finibus purus ac facilisis
+gravida. Suspendisse at purus a nisi dapibus cursus nec vel ligula.
+
+Ut a elementum justo, a aliquam sapien. Nullam erat orci, vehicula at
+tempor a, rhoncus ut quam. In facilisis magna ac mauris imperdiet
+ornare. Proin dignissim sem sit amet sodales rhoncus. Ut ut mauris at
+nisl iaculis congue. Maecenas diam est, aliquam a finibus quis,
+sodales at lorem. Maecenas hendrerit lectus non interdum
+aliquam. Aenean et pretium purus, id rutrum tortor. Praesent volutpat
+non nunc id consectetur. Sed cursus non lacus imperdiet
+fringilla. Curabitur pulvinar ex et nisl commodo, sit amet egestas
+enim auctor. Morbi convallis ullamcorper ex, ut aliquam magna cursus
+non. In tempus nec quam quis viverra. Aliquam egestas odio metus, quis
+tempus dui posuere finibus.
+
+Phasellus vehicula lorem at est vestibulum, in tempor sapien
+pulvinar. Sed sodales a ex ac bibendum. Nulla vulputate sit amet enim
+ut vestibulum. Nullam tincidunt, leo nec vehicula pulvinar, sapien
+lorem elementum nisl, in iaculis enim nunc id felis. Duis sagittis
+metus varius erat commodo imperdiet. Nullam eu velit vitae nulla
+finibus faucibus mattis vel eros. Proin tincidunt, leo non tempor
+elementum, ante diam pulvinar metus, viverra pulvinar ipsum erat et
+felis. Nulla quis placerat neque. Sed eu auctor nisl. Donec at
+sollicitudin magna. Fusce id mollis turpis. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc
+pulvinar odio at lectus sagittis, rhoncus finibus turpis cursus. Cras
+elementum, nisl a facilisis hendrerit, ante arcu volutpat mi, in
+euismod tortor nisl et velit. Nulla maximus, arcu vel bibendum
+maximus, felis erat aliquam tellus, in cursus nisl velit id
+felis. Fusce porta magna eget nisl porttitor, a feugiat mauris mollis.
+\begin{enumerate}
+
+\item blablabla
+
+\item blebleble
+
+\item bliblibli
+
+\end{enumerate}
+
+
+\section{Estructura da memoria}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
+ullamcorper sapien ac suscipit. Aenean a lorem ac sapien laoreet
+viverra. Donec quis convallis nisl. Ut ut efficitur neque, bibendum
+aliquam est. Pellentesque molestie velit sit amet sem vestibulum, ac
+ullamcorper arcu iaculis. Aenean feugiat enim libero, ac scelerisque
+sapien dignissim eu. Donec lacus orci, faucibus vehicula egestas
+egestas, dapibus a magna. Integer finibus purus ac facilisis
+gravida. Suspendisse at purus a nisi dapibus cursus nec vel ligula.
+
+Ut a elementum justo, a aliquam sapien. Nullam erat orci, vehicula at
+tempor a, rhoncus ut quam. In facilisis magna ac mauris imperdiet
+ornare. Proin dignissim sem sit amet sodales rhoncus. Ut ut mauris at
+nisl iaculis congue. Maecenas diam est, aliquam a finibus quis,
+sodales at lorem. Maecenas hendrerit lectus non interdum
+aliquam. Aenean et pretium purus, id rutrum tortor. Praesent volutpat
+non nunc id consectetur. Sed cursus non lacus imperdiet
+fringilla. Curabitur pulvinar ex et nisl commodo, sit amet egestas
+enim auctor. Morbi convallis ullamcorper ex, ut aliquam magna cursus
+non. In tempus nec quam quis viverra. Aliquam egestas odio metus, quis
+tempus dui posuere finibus.
+
+\paragraph{\chaptername~\ref{chap:plan}.} \textbf{\nameref{chap:plan}}\\
+Neste capítulo [...]
+
+\paragraph{\chaptername~\ref{chap:fund}.} \textbf{\nameref{chap:fund}}\\
+Preséntanse neste capítulo [...]
+
+\paragraph{\chaptername~\ref{chap:anal}.} \textbf{\nameref{chap:anal}}\\
+Neste capítulo [...]
+
+\paragraph{\chaptername~\ref{chap:des}.} \textbf{\nameref{chap:des}}\\
+Neste capítulo [...]
+
+\paragraph{\chaptername~\ref{chap:conclu}.} \textbf{\nameref{chap:conclu}}\\
+Finalizamos este documento co capítulo de conclusións [...]
+
+
+\chapter{PLANIFICACIÓN E METODOLOXÍA}
+\label{chap:plan}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
+porttitor turpis eu feugiat. Ut nec dolor vel sem sollicitudin
+fermentum. Proin ornare quam vel tortor auctor egestas. Maecenas
+congue faucibus lacus, ac convallis ante dictum ac. Etiam sit amet
+tellus in enim maximus condimentum a vel justo. Cras auctor est
+volutpat sapien vestibulum efficitur. Aliquam nec imperdiet
+odio.
+
+Proin vel erat ut lacus laoreet feugiat. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+Fusce ornare, quam non aliquam pharetra, odio metus vestibulum ex, vel
+pretium magna leo sit amet quam. Praesent quam eros, commodo aliquam
+purus nec, faucibus commodo ipsum.
+
+
+\section{Metodoloxía de desenvolvemento}
+
+Maecenas vitae massa non ex venenatis convallis facilisis ut
+augue. Sed vel mattis libero. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Mauris augue ligula, volutpat eget sodales vel,
+consectetur sit amet magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Aliquam non
+lectus velit. Sed quis lorem cursus, sodales ipsum vitae, placerat
+lectus. Phasellus blandit sodales augue sed placerat. Nullam id
+bibendum nulla, eu scelerisque urna. Ut efficitur enim lorem, vel
+mattis nulla vehicula et. Vivamus nisl augue, laoreet iaculis risus
+in, varius interdum libero. Nulla ac pulvinar ipsum. Nulla a nulla
+ex. Cras quis aliquam diam, at porta eros.
+
+Suspendisse convallis est risus. Nunc id neque in metus rhoncus
+pulvinar non quis libero. Mauris ac luctus ligula, ac dapibus
+dui. Fusce efficitur dui eu elit accumsan tristique. Nam aliquet
+lobortis velit vitae tincidunt. Etiam volutpat augue non quam
+fringilla, fermentum porta leo tristique. Praesent ut fermentum lacus.
+
+Curabitur efficitur felis urna, non vulputate sapien malesuada
+sagittis. Suspendisse eros magna, dictum et dapibus vitae, tempor eget
+ante. Curabitur nec cursus nibh. Donec suscipit sapien lectus. Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget pretium
+tellus, at mattis libero. Aenean eros risus, ultricies vel egestas
+vel, eleifend non dui. Mauris sollicitudin dignissim est, et cursus
+justo eleifend at. In tincidunt sem nec dapibus tempor. Sed ultrices
+dignissim justo.
+
+
+\section{Planificación do proxecto}
+
+Nulla neque quam, tempor non finibus et, pharetra ultrices
+leo. Quisque ornare quam vitae arcu euismod, maximus vestibulum lacus
+lacinia. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Pellentesque ac tincidunt leo. Ut
+quis ultricies neque, eu venenatis nulla. Vestibulum ante ipsum primis
+in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam
+vestibulum a dolor ac tristique. Integer interdum lorem id bibendum
+rhoncus. Vestibulum varius eget elit nec convallis. Donec venenatis
+metus quis erat tristique, non tempor augue lobortis. Vivamus tempus
+finibus nulla, hendrerit egestas eros fringilla non. Praesent
+pellentesque, ipsum vitae tempus accumsan, lacus quam euismod purus,
+vel facilisis nisl purus nec nisl. Morbi auctor, ipsum sed malesuada
+cursus, diam purus semper nunc, non lacinia lacus nunc eget
+nisi. Mauris quis congue nulla, quis iaculis justo. Cras accumsan
+lacus id diam eleifend auctor.
+
+$$\unit[60]{W} \times \unit[450]{h} = \unit[27000]{Wh}/1000 = \unit[27]{kWh}$$
+$$\unit[27]{kWh} \times \unit[0.12688]{\euro{}/kWh} =
+\unit[3.43]{\euro{}}$$
+
+
+
+\chapter{FUNDAMENTOS TECNOLÓXICOS}
+\label{chap:fund}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
+porttitor turpis eu feugiat. Ut nec dolor vel sem sollicitudin
+fermentum. Proin ornare quam vel tortor auctor egestas. Maecenas
+congue faucibus lacus, ac convallis ante dictum ac. Etiam sit amet
+tellus in enim maximus condimentum a vel justo.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
+porttitor turpis eu feugiat. Ut nec dolor vel sem sollicitudin
+fermentum. Proin ornare quam vel tortor auctor egestas. Maecenas
+congue faucibus lacus, ac convallis ante dictum ac. Etiam sit amet
+tellus in enim maximus condimentum a vel justo. Cras auctor est
+volutpat sapien vestibulum efficitur. Aliquam nec imperdiet
+odio. Proin vel erat ut lacus laoreet feugiat. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+Fusce ornare, quam non aliquam pharetra, odio metus vestibulum
+ex~\cite{gccdoc}, vel pretium magna leo sit amet quam. Praesent quam
+eros, commodo aliquam purus nec, faucibus commodo ipsum.
+
+Maecenas vitae massa non ex venenatis convallis facilisis ut
+augue. Sed vel mattis libero. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Mauris augue ligula, volutpat eget sodales vel,
+consectetur sit amet magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Aliquam non
+lectus velit. Sed quis lorem cursus, sodales ipsum vitae, placerat
+lectus. Phasellus blandit sodales augue sed placerat. Nullam id
+bibendum nulla, eu scelerisque urna. Ut efficitur enim lorem, vel
+mattis nulla vehicula et. Vivamus nisl augue, laoreet iaculis risus
+in, varius interdum libero. Nulla ac pulvinar ipsum. Nulla a nulla
+ex. Cras quis aliquam diam, at porta eros.
+
+Curabitur nec cursus nibh. Donec suscipit sapien lectus. Curabitur nec
+cursus nibh. Donec suscipit sapien lectus. Exemplo de listas anidadas:
+\begin{itemize}
+\item Item 1
+\item Item 2
+\item Item 3
+  \begin{itemize}
+  \item subitem
+  \item subitem
+  \end{itemize}
+\item Item 4
+\end{itemize}
+
+Suspendisse convallis est risus. Nunc id neque in metus rhoncus
+pulvinar non quis libero. Mauris ac luctus ligula, ac dapibus
+dui. Fusce efficitur dui eu elit accumsan tristique. Nam aliquet
+lobortis velit vitae tincidunt. Etiam volutpat augue non quam
+fringilla, fermentum porta leo tristique. Praesent ut fermentum
+lacus~\cite{HenessyPatterson, algorithms}.
+
+Curabitur nec cursus nibh. Donec suscipit sapien lectus. Lorem ipsum
+dolor sit amet, consectetur adipiscing elit. Nunc eget pretium tellus,
+at mattis libero. Aenean eros risus, ultricies vel egestas vel,
+eleifend non dui. Exemplo de enumeracións anidadas:
+\begin{enumerate}
+\item Item 1
+\item Item 2
+\item Item 3
+  \begin{enumerate}
+  \item subitem
+  \item subitem
+  \end{enumerate}
+\item Item 4
+\end{enumerate}
+
+Curabitur efficitur felis urna, non vulputate sapien malesuada
+sagittis. Suspendisse eros magna, dictum et dapibus vitae, tempor eget
+ante. Curabitur nec cursus nibh. Donec suscipit sapien lectus. Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget pretium
+tellus, at mattis libero. Aenean eros risus, ultricies vel egestas
+vel, eleifend non dui. Mauris sollicitudin dignissim est, et cursus
+justo eleifend at. In tincidunt sem nec dapibus tempor. Sed ultrices
+dignissim justo.  Na \figurename~\ref{fig:exemplo} podemos observar
+blablabla\ldots
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/logo_udc}
+  \caption{Exemplo de figura}
+  \label{fig:exemplo}
+\end{figure}
+
+Nulla neque quam, tempor non finibus et, pharetra ultrices
+leo. Quisque ornare quam vitae arcu euismod, maximus vestibulum lacus
+lacinia. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Pellentesque ac tincidunt leo. Ut
+quis ultricies neque, eu venenatis nulla. Vestibulum ante ipsum primis
+in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam
+vestibulum a dolor ac tristique. Integer interdum lorem id bibendum
+rhoncus. Vestibulum varius eget elit nec convallis. Donec venenatis
+metus quis erat tristique, non tempor augue lobortis. Vivamus tempus
+finibus nulla, hendrerit egestas eros fringilla non. Praesent
+pellentesque, ipsum vitae tempus accumsan, lacus quam euismod purus,
+vel facilisis nisl purus nec nisl. Morbi auctor, ipsum sed malesuada
+cursus, diam purus semper nunc, non lacinia lacus nunc eget
+nisi. Mauris quis congue nulla, quis iaculis justo. Cras accumsan
+lacus id diam eleifend auctor.
+
+Mauris quis congue nulla, quis iaculis justo. Cras accumsan
+lacus id diam eleifend auctor. Exemplo de descrición:
+\begin{description}
+\item[ElementoA] Vestibulum ante ipsum primis in faucibus orci luctus
+  et ultrices posuere cubilia Curae; Aliquam vestibulum a dolor ac
+  tristique.
+  \begin{itemize}
+  \item Itemize dentro de descrición\ldots
+  \item Outro item do Itemize
+  \end{itemize}
+\item[ElementoB] blablable\ldots
+\end{description}
+
+
+
+\chapter{ANÁLISE}
+\label{chap:anal}
+
+Suspendisse convallis est risus. Nunc id neque in metus rhoncus
+pulvinar non quis libero. Mauris ac luctus ligula, ac dapibus
+dui. Fusce efficitur dui eu elit accumsan tristique. Nam aliquet
+lobortis velit vitae tincidunt. Etiam volutpat augue non quam
+fringilla, fermentum porta leo tristique. Praesent ut fermentum lacus.
+
+
+\section{Análise da problemática}
+
+Curabitur efficitur felis urna, non vulputate sapien malesuada
+sagittis. Suspendisse eros magna, dictum et dapibus vitae, tempor eget
+ante. Curabitur nec cursus nibh. Donec suscipit sapien lectus. Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget pretium
+tellus, at mattis libero. Aenean eros risus, ultricies vel egestas
+vel, eleifend non dui. Mauris sollicitudin dignissim est, et cursus
+justo eleifend at. In tincidunt sem nec dapibus tempor. Sed ultrices
+dignissim justo.
+
+
+\section{Análise de requisitos}
+
+Maecenas vitae massa non ex venenatis convallis facilisis ut
+augue. Sed vel mattis libero. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Mauris augue ligula, volutpat eget sodales vel,
+consectetur sit amet magna. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Aliquam non
+lectus velit. Sed quis lorem cursus, sodales ipsum vitae, placerat
+lectus.
+
+Phasellus blandit sodales augue sed placerat. Nullam id bibendum
+nulla, eu scelerisque urna. Ut efficitur enim lorem, vel mattis nulla
+vehicula et. Vivamus nisl augue, laoreet iaculis risus in, varius
+interdum libero. Nulla ac pulvinar ipsum. Nulla a nulla ex. Cras quis
+aliquam diam, at porta eros.
+
+\subsection{Historias de usuario}
+
+Como se mostra no \tablename~\ref{tab:exemplo}, nulla feugiat in nisl
+quis accumsan. Pellentesque faucibus eros eget cursus
+bibendum. Pellentesque a sapien varius, ullamcorper mauris eu,
+consectetur sem. Pellentesque imperdiet, ante at pharetra dapibus,
+odio urna lacinia lorem, a rhoncus lorem tellus molestie ex. Donec
+orci orci, efficitur vel feugiat quis, consectetur quis mi. Mauris
+pharetra purus sed mauris consequat posuere. Suspendisse in nunc
+lacus. Nulla rutrum enim in nisl volutpat venenatis eu et velit.
+
+\begin{table}
+  \centering
+  \caption{Exemplo de táboa flotante}
+  \begin{tabular}{ccc}
+    \toprule
+    {\bf col 1} & {\bf col 2} & {\bf col 3}\\
+    el1 & el2 & el3\\
+    el4 & el5 & el6\\
+    el7 & el8 & el9\\
+    \bottomrule
+  \end{tabular}
+  \label{tab:exemplo}
+\end{table}
+
+
+
+\chapter{DESEÑO E IMPLEMENTACIÓN}
+\label{chap:des}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut augue
+mollis, pellentesque urna quis, vestibulum ex. Nunc massa metus,
+ultrices ut nisl ac, hendrerit bibendum turpis. Maecenas enim lacus,
+euismod vitae eros id, imperdiet aliquet arcu. Nullam mauris ligula,
+lobortis id consequat sed, imperdiet eget arcu. Nunc accumsan
+malesuada velit, ut fermentum nunc lobortis nec. Curabitur sed libero
+quis nulla ultricies tempor. Praesent sit amet rutrum tellus. Etiam
+viverra diam ut vestibulum elementum.
+
+Sed ipsum diam, efficitur sit amet ante placerat, euismod volutpat
+dolor. Etiam interdum, libero vitae blandit condimentum, turpis nunc
+hendrerit elit, sed feugiat dui tellus vulputate est. Etiam mauris
+diam, imperdiet quis lorem ac, feugiat ornare justo. Curabitur
+malesuada nisi in finibus blandit. Morbi et nulla in libero
+scelerisque consectetur ut non velit. Curabitur molestie ligula risus,
+dignissim auctor turpis consequat sed. Suspendisse potenti. Aenean
+vehicula auctor magna sed gravida.
+
+Proin non nisi nibh. Curabitur vitae rhoncus tellus, a pellentesque
+nunc. Sed porttitor scelerisque viverra. Nunc tincidunt velit at
+bibendum auctor. Donec quis scelerisque turpis, quis congue
+ligula. Curabitur convallis mi ac fringilla sagittis. Quisque eleifend
+placerat arcu, et consectetur ex vehicula non. Maecenas vulputate
+vehicula bibendum. Donec a egestas lorem. Nulla lectus massa, euismod
+vel tellus vitae, lacinia interdum dolor. Phasellus pellentesque nisi
+egestas nisl faucibus egestas. Sed fermentum mi nulla, a rutrum nulla
+porttitor sit amet. Phasellus dapibus rhoncus ligula at commodo.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+posuere cubilia Curae; Pellentesque gravida eu mi id luctus. Curabitur
+sapien odio, tincidunt bibendum nisi non, iaculis tempor augue. Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim
+leo in urna aliquet tempus. Fusce sit amet quam nisl. In vitae
+scelerisque nisi, vel vestibulum leo. Aenean in ante nulla. Aenean vel
+vulputate metus. Pellentesque at eleifend orci. Nam volutpat eros sed
+diam malesuada consequat.
+
+
+
+\chapter{CONCLUSIÓNS}
+\label{chap:conclu}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut augue
+mollis, pellentesque urna quis, vestibulum ex. Nunc massa metus,
+ultrices ut nisl ac, hendrerit bibendum turpis. Maecenas enim lacus,
+euismod vitae eros id, imperdiet aliquet arcu. Nullam mauris ligula,
+lobortis id consequat sed, imperdiet eget arcu. Nunc accumsan
+malesuada velit, ut fermentum nunc lobortis nec. Curabitur sed libero
+quis nulla ultricies tempor. Praesent sit amet rutrum tellus. Etiam
+viverra diam ut vestibulum elementum.
+
+Sed ipsum diam, efficitur sit amet ante placerat, euismod volutpat
+dolor. Etiam interdum, libero vitae blandit condimentum, turpis nunc
+hendrerit elit, sed feugiat dui tellus vulputate est. Etiam mauris
+diam, imperdiet quis lorem ac, feugiat ornare justo. Curabitur
+malesuada nisi in finibus blandit. Morbi et nulla in libero
+scelerisque consectetur ut non velit. Curabitur molestie ligula risus,
+dignissim auctor turpis consequat sed. Suspendisse potenti. Aenean
+vehicula auctor magna sed gravida.
+
+Proin non nisi nibh. Curabitur vitae rhoncus tellus, a pellentesque
+nunc. Sed porttitor scelerisque viverra. Nunc tincidunt velit at
+bibendum auctor. Donec quis scelerisque turpis, quis congue
+ligula. Curabitur convallis mi ac fringilla sagittis. Quisque eleifend
+placerat arcu, et consectetur ex vehicula non. Maecenas vulputate
+vehicula bibendum. Donec a egestas lorem. Nulla lectus massa, euismod
+vel tellus vitae, lacinia interdum dolor. Phasellus pellentesque nisi
+egestas nisl faucibus egestas. Sed fermentum mi nulla, a rutrum nulla
+porttitor sit amet. Phasellus dapibus rhoncus ligula at commodo.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+posuere cubilia Curae; Pellentesque gravida eu mi id luctus. Curabitur
+sapien odio, tincidunt bibendum nisi non, iaculis tempor augue. Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim
+leo in urna aliquet tempus. Fusce sit amet quam nisl. In vitae
+scelerisque nisi, vel vestibulum leo. Aenean in ante nulla. Aenean vel
+vulputate metus. Pellentesque at eleifend orci. Nam volutpat eros sed
+diam malesuada consequat.
+
+
+
+\appendix
+
+\chapter{Manual de Usuario}
+%\includepdf[pages={-}, pagecommand={\thispagestyle{plain}}]{manual/Manual_de_Usuario.pdf}
+
+
+
+\backmatter
+
+\begin{thebibliography}{9}\label{bib}
+\addcontentsline{toc}{chapter}{\nameref{bib}}
+
+\bibitem{HenessyPatterson} John L. Hennessy and David A. Patterson.
+  \textit{Computer Architecture: A Quantitative Approach}.
+  Morgan Kaufmann. 2011 (5th Ed.) / 2017 (6th Ed.).
+
+\bibitem{gccdoc} Free Software Foundation.
+  \textit{Official gcc documentation (last version)}.
+  \\ {\footnotesize \url{http://gcc.gnu.org/onlinedocs/gcc}}
+  {\footnotesize [Online; accessed 16-September-2018]}
+
+\bibitem{MapReduce} Jeffrey Dean and Sanjay Ghemawat.
+  \textit{MapReduce: Simplified Data Processing on Large Clusters}.
+  In Proc. of Sixth Symposium on Operating System Design and
+  Implementation (OSDI'04). Pages 137--150. 2014.
+
+\bibitem{gromacs3} Erick Lindahl, Berk Hess and David Spoel.
+  GROMACS 3.0: A package for molecular simulation and trajectory analysis.
+  \textit{Journal of Molecular Modeling}. Volume 7. Pages 306--317. 2001.
+  DOI: 10.1007/s008940100045
+
+\bibitem{algorithms} J{\"o}rg Arndt.
+  \textit{Matters Computational: Ideas, Algorithms, Source Code
+    (formerly: Algorithms for Programmers)}.
+  Springer-Verlag GmbH. 2010.
+  \\ {\footnotesize
+    \url{http://www.freetechbooks.com/algorithms-for-programmers-t208.html}}
+  {\footnotesize [Online; accessed 16-September-2018]}
+
+\bibitem{DreherRaffin14} Matthieu Dreher and Bruno Raffin.
+  \textit{A Flexible Framework for Asynchronous in Situ and in Transit Analytics for Scientific Simulations}.
+  In Proc. of 14th IEEE/ACM International Symposium on Cluster, Cloud
+  and Grid Computing. Pages 277--286, 2014.
+  DOI: 10.1109/CCGrid.2014.92
+
+\end{thebibliography}
+
+\end{document}
