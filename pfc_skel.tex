@@ -676,42 +676,54 @@ diam malesuada consequat.
 
 \backmatter
 
-\begin{thebibliography}{9}\label{bib}
-\addcontentsline{toc}{chapter}{\nameref{bib}}
+%
+% Xestionar as referencias con BibTeX
+%
+% \nocite{*}
+\bibliography{pfc}
+% \bibliographystyle{abbrv}
+\bibliographystyle{plain}
+\addcontentsline{toc}{chapter}{Bibliografía}
 
-\bibitem{HenessyPatterson} John L. Hennessy and David A. Patterson.
-  \textit{Computer Architecture: A Quantitative Approach}.
-  Morgan Kaufmann. 2011 (5th Ed.) / 2017 (6th Ed.).
+%
+% Xestionar as referencias sen BibTeX
+%
+% \begin{thebibliography}{9}\label{bib}
+% \addcontentsline{toc}{chapter}{\nameref{bib}}
 
-\bibitem{gccdoc} Free Software Foundation.
-  \textit{Official gcc documentation (last version)}.
-  \\ {\footnotesize \url{http://gcc.gnu.org/onlinedocs/gcc}}
-  {\footnotesize [Online; accessed 16-September-2018]}
+% \bibitem{HenessyPatterson} John L. Hennessy and David A. Patterson.
+%   \textit{Computer Architecture: A Quantitative Approach}.
+%   Morgan Kaufmann. 2011 (5th Ed.) / 2017 (6th Ed.).
 
-\bibitem{MapReduce} Jeffrey Dean and Sanjay Ghemawat.
-  \textit{MapReduce: Simplified Data Processing on Large Clusters}.
-  In Proc. of Sixth Symposium on Operating System Design and
-  Implementation (OSDI'04). Pages 137--150. 2014.
+% \bibitem{gccdoc} Free Software Foundation.
+%   \textit{Official gcc documentation (last version)}.
+%   \\ {\footnotesize \url{http://gcc.gnu.org/onlinedocs/gcc}}
+%   {\footnotesize [Online; accessed 16-September-2018]}
 
-\bibitem{gromacs3} Erick Lindahl, Berk Hess and David Spoel.
-  GROMACS 3.0: A package for molecular simulation and trajectory analysis.
-  \textit{Journal of Molecular Modeling}. Volume 7. Pages 306--317. 2001.
-  DOI: 10.1007/s008940100045
+% \bibitem{MapReduce} Jeffrey Dean and Sanjay Ghemawat.
+%   \textit{MapReduce: Simplified Data Processing on Large Clusters}.
+%   In Proc. of Sixth Symposium on Operating System Design and
+%   Implementation (OSDI'04). Pages 137--150. 2014.
 
-\bibitem{algorithms} J{\"o}rg Arndt.
-  \textit{Matters Computational: Ideas, Algorithms, Source Code
-    (formerly: Algorithms for Programmers)}.
-  Springer-Verlag GmbH. 2010.
-  \\ {\footnotesize
-    \url{http://www.freetechbooks.com/algorithms-for-programmers-t208.html}}
-  {\footnotesize [Online; accessed 16-September-2018]}
+% \bibitem{gromacs3} Erick Lindahl, Berk Hess and David Spoel.
+%   GROMACS 3.0: A package for molecular simulation and trajectory analysis.
+%   \textit{Journal of Molecular Modeling}. Volume 7. Pages 306--317. 2001.
+%   DOI: 10.1007/s008940100045
 
-\bibitem{DreherRaffin14} Matthieu Dreher and Bruno Raffin.
-  \textit{A Flexible Framework for Asynchronous in Situ and in Transit Analytics for Scientific Simulations}.
-  In Proc. of 14th IEEE/ACM International Symposium on Cluster, Cloud
-  and Grid Computing. Pages 277--286, 2014.
-  DOI: 10.1109/CCGrid.2014.92
+% \bibitem{algorithms} J{\"o}rg Arndt.
+%   \textit{Matters Computational: Ideas, Algorithms, Source Code
+%     (formerly: Algorithms for Programmers)}.
+%   Springer-Verlag GmbH. 2010.
+%   \\ {\footnotesize
+%     \url{http://www.freetechbooks.com/algorithms-for-programmers-t208.html}}
+%   {\footnotesize [Online; accessed 16-September-2018]}
 
-\end{thebibliography}
+% \bibitem{DreherRaffin14} Matthieu Dreher and Bruno Raffin.
+%   \textit{A Flexible Framework for Asynchronous in Situ and in Transit Analytics for Scientific Simulations}.
+%   In Proc. of 14th IEEE/ACM International Symposium on Cluster, Cloud
+%   and Grid Computing. Pages 277--286, 2014.
+%   DOI: 10.1109/CCGrid.2014.92
+
+% \end{thebibliography}
 
 \end{document}
